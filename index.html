@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BG color changer</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        onclick="changeBgColor(this)"
+        style="background-color: red"
+        class="content"
+        id="red"
+      >
+        Red
+      </div>
+      <div
+        onclick="changeBgColor(this)"
+        style="background-color: yellow; color: black"
+        class="content"
+        id="yellow"
+      >
+        Yellow
+      </div>
+      <div
+        onclick="changeBgColor(this)"
+        style="background-color: black; color: white"
+        class="content"
+        id="black"
+      >
+        Black
+      </div>
+      <div
+        onclick="changeBgColor(this)"
+        style="background-color: purple"
+        class="content"
+        id="purple"
+      >
+        Purple
+      </div>
+      <div
+        onclick="changeBgColor(this)"
+        style="background-color: green"
+        class="content"
+        id="green"
+      >
+        Green
+      </div>
+      <div
+        onclick="changeBgColor(this)"
+        style="background-color: royalblue"
+        class="content"
+        id="blue"
+      >
+        Blue
+      </div>
+      <div
+        onclick="changeBgColor(this)"
+        style="background-color: white; color: black"
+        class="content"
+        id="default"
+      >
+        Default
+      </div>
+      <div class="custom-color">
+        <input type="color" id="customColorPicker" value="#ffffff" />
+        <button onclick="applyCustomColor()">Apply Custom Color</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
